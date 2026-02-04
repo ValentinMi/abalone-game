@@ -13,6 +13,10 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 COPY server/ ./server/
+COPY src/types.ts ./src/types.ts
+COPY src/constants.ts ./src/constants.ts
+COPY src/logic/ ./src/logic/
+COPY src/utils/hex.ts ./src/utils/hex.ts
 COPY tsconfig.json tsconfig.server.json ./
 
 EXPOSE 3001
