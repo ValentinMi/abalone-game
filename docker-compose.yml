@@ -4,7 +4,7 @@ services:
       context: .
       target: client
     ports:
-      - '80:80'
+      - '81:80'
     depends_on:
       - server
     restart: unless-stopped
