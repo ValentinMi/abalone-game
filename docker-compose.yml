@@ -14,5 +14,5 @@ services:
       context: .
       target: server
     environment:
-      - PORT=3001
+      - PORT=3006
     restart: unless-stopped
